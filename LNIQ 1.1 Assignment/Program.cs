@@ -8,14 +8,14 @@ namespace LNIQ_1._1_Assignment
         {
 
             #region 1==>1
-            //var products = ListGenerator.GetProductsList();
-            //var outOfStockProducts = products.Where(p => p.UnitsInStock == 0).ToList();
+            var products = ListGenerator.GetProductsList();
+            var outOfStockProducts = products.Where(p => p.UnitsInStock == 0).ToList();
 
-            //Console.WriteLine("all products that are out of stock");
-            //foreach (var product in outOfStockProducts)
-            //{
-            //    Console.WriteLine(product.ProductName);
-            //}
+            Console.WriteLine("all products that are out of stock");
+            foreach (var product in outOfStockProducts)
+            {
+                Console.WriteLine(product.ProductName);
+            }
             #endregion
 
             #region 1==>2
